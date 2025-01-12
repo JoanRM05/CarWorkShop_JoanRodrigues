@@ -73,11 +73,11 @@ class ServiceReparation{
             $font->valign('bottom');
         });
 
-        $imageObject->save("../../resources/imgs/output/" . $_FILES["image"]["name"]);
+        $imageObject->save("../../resources/imgs/" . $_FILES["image"]["name"]);
 
-        $imgContent = file_get_contents("../../resources/imgs/output/" . $_FILES["image"]["name"]);
+        $imgContent = file_get_contents("../../resources/imgs/" . $_FILES["image"]["name"]);
 
-        unlink("../../resources/imgs/output/" . $_FILES["image"]["name"]);
+        unlink("../../resources/imgs/" . $_FILES["image"]["name"]);
 
         $sql = "INSERT INTO reparation VALUES ('$uuid', $idw, '$namew', '$rdate', '$lplate', ?);";
 
@@ -129,11 +129,11 @@ class ServiceReparation{
 
                     $image->pixelate(20);
 
-                    $image->save("../../resources/imgs/input/image1.jpg");
+                    $image->save("../../public/resources/imgs/image1.jpg");
 
-                    $imgContent = file_get_contents("../../resources/imgs/input/image1.jpg");
+                    $imgContent = file_get_contents("../../public/resources/imgs/image1.jpg");
 
-                    unlink("../../resources/imgs/input/image1.jpg");
+                    unlink("../../resources/imgs/image1.jpg");
 
                     return new Reparation($row["uuid"], $row["id_workshop"], $row["name_workshop"], $row["register_date"], "****-***", $imgContent);    
 
