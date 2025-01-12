@@ -129,9 +129,9 @@ class ServiceReparation{
 
                     $image->pixelate(20);
 
-                    $image->save("../../public/resources/imgs/image1.jpg");
+                    $image->save("../../resources/imgs/image1.jpg");
 
-                    $imgContent = file_get_contents("../../public/resources/imgs/image1.jpg");
+                    $imgContent = file_get_contents("../../resources/imgs/image1.jpg");
 
                     unlink("../../resources/imgs/image1.jpg");
 

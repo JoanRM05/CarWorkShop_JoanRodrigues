@@ -1,0 +1,6 @@
+[2025-01-12T17:36:29.582343+01:00] LogWorkerDBCon.INFO: Conection with database established [] []
+[2025-01-12T17:36:29.646263+01:00] LogWorkerDBIns.INFO: Insert to Reparations table complited [] []
+[2025-01-12T17:36:44.574331+01:00] LogWorkerDBCon.INFO: Conection with database established [] []
+[2025-01-12T17:36:44.575956+01:00] LogWorkerDBSel.INFO: Select to Reparations table complited [] []
+[2025-01-12T17:37:11.996942+01:00] LogWorkerDBCon.INFO: Conection with database established [] []
+[2025-01-12T17:37:11.998355+01:00] LogWorkerDBSel.INFO: Select to Reparations table complited [] []
